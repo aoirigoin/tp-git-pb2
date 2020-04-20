@@ -21,21 +21,21 @@ public class Calculadora {
 	 
 	 switch (opcion) {
 		case 1:
-			System.out.println("Elegiste la opcion suma");
-			resultado = a + b;
+			System.out.println("Elegiste la opcion multiplicacion");
+			resultado = a * b;
 			break;
 		case 2:
-			System.out.println("Elegiste la opcion resta");
-			resultado = a - b;
+			System.out.println("Elegiste la opcion division");
+			resultado = a / b;
 			break;
 
 		case 3:
-			System.out.println("Elegiste la opcion multipacion");
-			resultado = a * b;
+			System.out.println("Elegiste la opcion resta");
+			resultado = a - b;
 			break;
 		case 4:
-			System.out.println("Elegiste la opcion division");
-			resultado = a / b;
+			System.out.println("Elegiste la opcion suma");
+			resultado = a + b;
 			break;
 		}
 	 System.out.println("El resultado es " + resultado.toString());
