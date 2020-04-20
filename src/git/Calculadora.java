@@ -19,25 +19,25 @@ public class Calculadora {
 	 System.out.println("Ingrese el segundo numero");
 	 a = teclado.next();
 	 
-	 if (opcion.equals(1)) {
-		 resultado = a + b;
+	 switch (opcion) {
+		case 1:
+			System.out.println("Elegiste la opcion suma");
+			resultado = a + b;
+			break;
+		case 2:
+			System.out.println("Elegiste la opcion resta");
+			resultado = a - b;
+			break;
 
-		 } else if (opcion.equals(2)) {
-
-		 resultado = a - b;
-
-		 } else if (opcion.equals(3)) {
-		  
-		 resultado = a * b;
-		  
-		 } else {
-		 resultado = a / b;
-		 }
-
-		  
-		  
-
-		
+		case 3:
+			System.out.println("Elegiste la opcion multipacion");
+			resultado = a * b;
+			break;
+		case 4:
+			System.out.println("Elegiste la opcion division");
+			resultado = a / b;
+			break;
+		}
 	 System.out.println("El resultado es " + resultado.toString());
 	 }
 }
